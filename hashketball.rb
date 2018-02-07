@@ -185,7 +185,7 @@ end
     
 def player_stats(player)
   game_hash
-  stats_hash = Hash.new
+  stats_hash = {}
   game_hash.each do |homeaway,info|
     info.each do |teaminfo,data|
       if teaminfo == :players
@@ -196,7 +196,7 @@ def player_stats(player)
         end 
       end 
     end 
-  end 
+  end
   stats_hash
 end 
 
