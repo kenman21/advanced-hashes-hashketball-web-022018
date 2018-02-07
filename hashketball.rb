@@ -187,8 +187,8 @@ def player_stats(player)
   game_hash
   stats_hash = Hash.new
   game_hash.each do |homeaway,info|
-    info.each do |teaminfom,data|
-      if data == :players
+    info.each do |teaminfo,data|
+      if teaminfo == :players
         data.each do |players,stats|
           if players == player
             stats_hash = stats
